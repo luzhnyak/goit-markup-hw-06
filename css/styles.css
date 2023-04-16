@@ -140,6 +140,35 @@ img {
   color: var(--general-font-color);
 }
 
+.social-list {
+  margin-top: 8px;
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+}
+
+.social-link {
+  background-color: #4d5ae5;
+  color: var(--light-color);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-icon {
+  fill: currentColor;
+}
+
+.social-link:hover,
+.social-link:focus {
+  background-color: #404bbf;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 /* ======================= /Components section ========================== */
 
 /* ======================= Header section ========================== */
@@ -367,35 +396,6 @@ img {
   text-align: center;
 }
 
-.team-social-list {
-  margin-top: 8px;
-  display: flex;
-  gap: 24px;
-  justify-content: center;
-}
-
-.team-social-link {
-  background-color: #4d5ae5;
-  color: var(--light-color);
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 40px;
-  height: 40px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.team-social-svg {
-  fill: currentColor;
-}
-
-.team-social-link:hover,
-.team-social-link:focus {
-  background-color: #404bbf;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 /* ======================= /Team section ========================== */
 
 /* ======================= Portfolio section ========================== */
@@ -586,25 +586,22 @@ img {
   margin-bottom: 16px;
 }
 
-.footer-section .team-social-list {
+.footer-section .social-list {
   margin-top: 8px;
   gap: 16px;
 }
 
-.footer-section .team-social-item {
-}
-
-.footer-section .team-social-link {
+.footer-section .social-link {
   background-color: #4d5ae5;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-section .team-social-svg {
+.footer-section .social-icon {
   fill: var(--light-color);
 }
 
-.footer-section .team-social-link:hover,
-.footer-section .team-social-link:focus {
+.footer-section .social-link:hover,
+.footer-section .social-link:focus {
   background-color: #31d0aa;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
